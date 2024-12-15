@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <header>
+        <resultCode>00</resultCode>
+        <resultMsg>SERVICE SUCCESS</resultMsg>
+    </header>
+    <body>
+        <items>
+            <item>
+                <OBJT_ID>64869</OBJT_ID>
+                <FCLTY_TY>양로시설</FCLTY_TY>
+                <FCLTY_CD>513011</FCLTY_CD>
+                <FCLTY_NM>청운양로원</FCLTY_NM>
+                <ADRES>서울특별시 종로구 구기동 216</ADRES>
+                <RN_ADRES>서울특별시 종로구 비봉길 76</RN_ADRES>
+                <TELNO>02-379-9232</TELNO>
+                <CTPRVN_CD>11</CTPRVN_CD>
+                <SGG_CD>11110</SGG_CD>
+                <EMD_CD>11110182</EMD_CD>
+                <X>14132518.98</X>
+                <Y>4525221.499</Y>
+                <DATA_YR>2022</DATA_YR>
+            </item>
+            <item>
+                <OBJT_ID>66462</OBJT_ID>
+                <FCLTY_TY>양로시설</FCLTY_TY>
+                <FCLTY_CD>513011</FCLTY_CD>
+                <FCLTY_NM>자애로운 성모의 집</FCLTY_NM>
+                <ADRES>서울특별시 도봉구 쌍문동 460-212</ADRES>
+                <RN_ADRES>서울특별시 도봉구 우이천로38마길 19</RN_ADRES>
+                <TELNO>02-990-7374</TELNO>
+                <CTPRVN_CD>11</CTPRVN_CD>
+                <SGG_CD>11320</SGG_CD>
+                <EMD_CD>11320105</EMD_CD>
+                <X>14140114.37</X>
+                <Y>4530601.735</Y>
+                <DATA_YR>2022</DATA_YR>
+            </item>
+            <item>
+                <OBJT_ID>66840</OBJT_ID>
+                <FCLTY_TY>양로시설</FCLTY_TY>
+                <FCLTY_CD>513011</FCLTY_CD>
+                <FCLTY_NM>홍파양로원</FCLTY_NM>
+                <ADRES>서울특별시 노원구 상계동 1266</ADRES>
+                <RN_ADRES>서울특별시 노원구 동일로248길 30</RN_ADRES>
+                <TELNO>02-939-0735</TELNO>
+                <CTPRVN_CD>11</CTPRVN_CD>
+                <SGG_CD>11350</SGG_CD>
+                <EMD_CD>11350105</EMD_CD>
+                <X>14143910.45</X>
+                <Y>4534377.503</Y>
+                <DATA_YR>2022</DATA_YR>
+            </item>
