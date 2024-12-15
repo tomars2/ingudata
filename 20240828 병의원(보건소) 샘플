@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <header>
+        <resultCode>00</resultCode>
+        <resultMsg>SERVICE SUCCESS</resultMsg>
+    </header>
+    <body>
+        <items>
+            <item>
+                <NUM>131</NUM>
+                <DUTYADDR>충청남도 서천군 서천읍 사곡길 26</DUTYADDR>
+                <DUTYDIV>R</DUTYDIV>
+                <DUTYDIVNAME>보건소</DUTYDIVNAME>
+                <DUTYEMCLS>G099</DUTYEMCLS>
+                <DUTYEMCLSNAME>응급의료기관 이외</DUTYEMCLSNAME>
+                <DUTYERYN>2</DUTYERYN>
+                <DUTYETC>null</DUTYETC>
+                <DUTYMAPIMG>null</DUTYMAPIMG>
+                <DUTYNAME>서천군보건소</DUTYNAME>
+                <DUTYTEL1>041-950-6750</DUTYTEL1>
+                <DUTYTEL3>null</DUTYTEL3>
+                <DUTYTIME1C>1800</DUTYTIME1C>
+                <DUTYTIME2C>1800</DUTYTIME2C>
+                <DUTYTIME3C>1800</DUTYTIME3C>
+                <DUTYTIME4C>1800</DUTYTIME4C>
+                <DUTYTIME5C>1800</DUTYTIME5C>
+                <DUTYTIME6C>null</DUTYTIME6C>
+                <DUTYTIME7C>null</DUTYTIME7C>
+                <DUTYTIME8C>null</DUTYTIME8C>
+                <DUTYTIME1S>0900</DUTYTIME1S>
+                <DUTYTIME2S>0900</DUTYTIME2S>
+                <DUTYTIME3S>0900</DUTYTIME3S>
+                <DUTYTIME4S>0900</DUTYTIME4S>
+                <DUTYTIME5S>0900</DUTYTIME5S>
+                <DUTYTIME6S>null</DUTYTIME6S>
+                <DUTYTIME7S>null</DUTYTIME7S>
+                <DUTYTIME8S>null</DUTYTIME8S>
+                <HPID>E2400014</HPID>
+                <POSTCDN1>325</POSTCDN1>
+                <POSTCDN2>802</POSTCDN2>
+                <DUTYINF>성인 발열 및 간단한 소화계 진료만 가능</DUTYINF>
+                <LON>126.689483333333328</LON>
+                <LAT>36.082161111111112</LAT>
+                <X>14103008.773529584</X>
+                <Y>4311932.511377574</Y>
+                <DUTYWEEKENDAT>N</DUTYWEEKENDAT>
+            </item>
+            <item>
+                <NUM>132</NUM>
+                <DUTYADDR>충청남도 서천군 마산면 삼일로265번길 11 (서천군보건소 마산보건지소)</DUTYADDR>
+                <DUTYDIV>R</DUTYDIV>
+                <DUTYDIVNAME>보건소</DUTYDIVNAME>
+                <DUTYEMCLS>G099</DUTYEMCLS>
+                <DUTYEMCLSNAME>응급의료기관 이외</DUTYEMCLSNAME>
+                <DUTYERYN>2</DUTYERYN>
+                <DUTYETC>null</DUTYETC>
+                <DUTYMAPIMG>null</DUTYMAPIMG>
+                <DUTYNAME>마산보건지소</DUTYNAME>
+                <DUTYTEL1>041-950-5607</DUTYTEL1>
+                <DUTYTEL3>null</DUTYTEL3>
+                <DUTYTIME1C>1800</DUTYTIME1C>
+                <DUTYTIME2C>1800</DUTYTIME2C>
+                <DUTYTIME3C>1800</DUTYTIME3C>
+                <DUTYTIME4C>1800</DUTYTIME4C>
+                <DUTYTIME5C>1800</DUTYTIME5C>
+                <DUTYTIME6C>null</DUTYTIME6C>
+                <DUTYTIME7C>null</DUTYTIME7C>
+                <DUTYTIME8C>null</DUTYTIME8C>
+                <DUTYTIME1S>0900</DUTYTIME1S>
+                <DUTYTIME2S>0900</DUTYTIME2S>
+                <DUTYTIME3S>0900</DUTYTIME3S>
+                <DUTYTIME4S>0900</DUTYTIME4S>
+                <DUTYTIME5S>0900</DUTYTIME5S>
+                <DUTYTIME6S>null</DUTYTIME6S>
+                <DUTYTIME7S>null</DUTYTIME7S>
+                <DUTYTIME8S>null</DUTYTIME8S>
+                <HPID>E2400146</HPID>
+                <POSTCDN1>336</POSTCDN1>
+                <POSTCDN2>22 </POSTCDN2>
+                <DUTYINF>null</DUTYINF>
+                <LON>126.79148648035588</LON>
+                <LAT>36.11763521319526</LAT>
+                <X>14114363.711915448</X>
+                <Y>4316819.891864564</Y>
+                <DUTYWEEKENDAT>N</DUTYWEEKENDAT>
+            </item>
+            <item>
+                <NUM>133</NUM>
+                <DUTYADDR>충청남도 서천군 문산면 신농길24번길 6 </DUTYADDR>
+                <DUTYDIV>R</DUTYDIV>
+                <DUTYDIVNAME>보건소</DUTYDIVNAME>
+                <DUTYEMCLS>G099</DUTYEMCLS>
+                <DUTYEMCLSNAME>응급의료기관 이외</DUTYEMCLSNAME>
+                <DUTYERYN>2</DUTYERYN>
+                <DUTYETC>null</DUTYETC>
+                <DUTYMAPIMG>null</DUTYMAPIMG>
+                <DUTYNAME>문산보건지소</DUTYNAME>
+                <DUTYTEL1>041-950-5609</DUTYTEL1>
+                <DUTYTEL3>null</DUTYTEL3>
+                <DUTYTIME1C>1800</DUTYTIME1C>
+                <DUTYTIME2C>1800</DUTYTIME2C>
+                <DUTYTIME3C>1800</DUTYTIME3C>
+                <DUTYTIME4C>1800</DUTYTIME4C>
+                <DUTYTIME5C>1800</DUTYTIME5C>
+                <DUTYTIME6C>null</DUTYTIME6C>
+                <DUTYTIME7C>null</DUTYTIME7C>
+                <DUTYTIME8C>null</DUTYTIME8C>
+                <DUTYTIME1S>0900</DUTYTIME1S>
+                <DUTYTIME2S>0900</DUTYTIME2S>
+                <DUTYTIME3S>0900</DUTYTIME3S>
+                <DUTYTIME4S>0900</DUTYTIME4S>
+                <DUTYTIME5S>0900</DUTYTIME5S>
+                <DUTYTIME6S>null</DUTYTIME6S>
+                <DUTYTIME7S>null</DUTYTIME7S>
+                <DUTYTIME8S>null</DUTYTIME8S>
+                <HPID>E2400195</HPID>
+                <POSTCDN1>336</POSTCDN1>
+                <POSTCDN2>17</POSTCDN2>
+                <DUTYINF>null</DUTYINF>
+                <LON>126.752447222222216</LON>
+                <LAT>36.141663888888885</LAT>
+                <X>14110017.88157906</X>
+                <Y>4320131.6537399655</Y>
+                <DUTYWEEKENDAT>N</DUTYWEEKENDAT>
+            </item>
