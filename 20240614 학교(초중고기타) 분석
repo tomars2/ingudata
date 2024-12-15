@@ -1,0 +1,36 @@
+자료 출처
+	safemap.go.kr 생활안전정보
+	학교(초,중,고,기타)
+
+자료 생성 주기
+	년
+
+전국 자료 받는 방법
+	http://safemap.go.kr/openApiService/data/getSchoolData.do?serviceKey=FBGIOLF2-FBGI-FBGI-FBGI-FBGIOLF21T&numOfRows=70000&pageNo=1
+
++API 설정
+	serviceKey		인증키. FBGIOLF2-FBGI-FBGI-FBGI-FBGIOLF21T
+	numOfRows		페이지 크기. 70000
+	pageNo			페이지 번호. 기본값 : 1
+
+JSON 코드 분석
+	코드 샘플
+	<item>
+		<SECD>03</SECD>
+		<FCLTYCD>SH00011642</FCLTYCD>
+		<FCLTYTY>01</FCLTYTY>
+		<FCLTYNM>인천작동초등학교</FCLTYNM>
+		<LNMADR>인천광역시 계양구 작전동 920</LNMADR>
+		<LATITUDE>37.5288644</LATITUDE>
+		<LONGITUDE>126.7356736</LONGITUDE>
+		<X>14108151</X>
+		<Y>4513082</Y>
+	</item>
+법정동코드에서 사용하는 필드명으로 통일 필요
+	추가 필드
+		ID: 'D' + X 좌표 정수 + Y 좌표 정수
+		DATE: yyyy-mm-dd (작업 일자)
+		stdgCd: 법정동 코드 10자리
+
+
+----------
