@@ -1,0 +1,89 @@
+자료 출처
+	safemap.go.kr 생활안전정보
+	병의원(치과병의원)
+
+자료 생성 주기: 년
+
+자료 형식: XML
+
+API 설정
+	serviceKey		인증키. FBGIOLF2-FBGI-FBGI-FBGI-FBGIOLF21T
+	numOfRows		페이지 크기. 100000
+	pageNo			페이지 번호. 기본값 : 1
+	dataType		XML
+	DutyDiv			N/M (치과의원 : N, 치과병원 : M)
+
+전국 자료 받는 방법
+	http://safemap.go.kr/openApiService/data/getDentistHospitalData.do?serviceKey=FBGIOLF2-FBGI-FBGI-FBGI-FBGIOLF21T&numOfRows=100000&pageNo=1&dataType=XML&DutyDiv=N
+
+	치과의원과 치과병원 2개 다 다운로드
+		DutyDiv
+			N 설정으로 치과의원 다운로드 1번
+			M 설정으로 치과병원 다운로드 1번
+
+JSON 코드 분석
+	코드 샘플
+	<item>
+		<NUM>86</NUM>
+		<DUTYADDR>경기도 화성시 병점서로 33, 301호 (병점동, 두산탑프라자)</DUTYADDR>
+		<DUTYDIV>N</DUTYDIV>
+		<DUTYDIVNAME>치과의원</DUTYDIVNAME>
+		<DUTYNAME>웰치과의원</DUTYNAME>
+		<LON>127.03996602481206</LON>
+		<LAT>37.20551504701538</LAT>
+		<X>14142024.328276854</X>
+		<Y>4467791.780313043</Y>
+		<DUTYTEL1>031-236-2877</DUTYTEL1>
+		<DUTYWEEKENDAT>N</DUTYWEEKENDAT>
+		<DUTYERYN>2</DUTYERYN>
+		<DUTYETC>null</DUTYETC>
+		<DUTYMAPIMG>null</DUTYMAPIMG>
+		<DUTYTEL3>null</DUTYTEL3>
+		<DUTYTIME1C>1830</DUTYTIME1C>
+		<DUTYTIME2C>1830</DUTYTIME2C>
+		<DUTYTIME3C>1830</DUTYTIME3C>
+		<DUTYTIME4C>2030</DUTYTIME4C>
+		<DUTYTIME5C>1830</DUTYTIME5C>
+		<DUTYTIME6C>1330</DUTYTIME6C>
+		<DUTYTIME7C>null</DUTYTIME7C>
+		<DUTYTIME8C>null</DUTYTIME8C>
+		<DUTYTIME1S>0930</DUTYTIME1S>
+		<DUTYTIME2S>0930</DUTYTIME2S>
+		<DUTYTIME3S>0930</DUTYTIME3S>
+		<DUTYTIME4S>0930</DUTYTIME4S>
+		<DUTYTIME5S>0930</DUTYTIME5S>
+		<DUTYTIME6S>0930</DUTYTIME6S>
+		<DUTYTIME7S>null</DUTYTIME7S>
+		<DUTYTIME8S>null</DUTYTIME8S>
+		<HPID>A2106648</HPID>
+		<POSTCDN1>184</POSTCDN1>
+		<POSTCDN2>13 </POSTCDN2>
+		<DUTYINF>null</DUTYINF>
+	</item>
+
+데이터 전처리
+	XML 필드
+		DUTYADDR: 주소
+			경기도 화성시 병점서로 33, 301호 (병점동, 두산탑프라자)에서
+				법정동코드에서 사용하는 필드명으로 통일 필요
+				"경기도 화성시" 문자열로 법정동 코드 10자리로 Mapping 필요
+		DUTYDIV: 치과 등급
+			치과의원 : N, 치과병원 : M
+		DUTYDIVNAME
+			: 치과의원 / 치과병원
+		LON:	위도
+		LAT:	경도
+		X:		지도의 X 자료
+		Y:		지도의 Y 자료
+		DUTYTEL1: 전화
+		DUTYWEEKENDAT: 주말 영업 (Y/N)
+	추가 필드
+		ID: 'D' + X 좌표 정수 + Y 좌표 정수
+		DATE: yyyy-mm-dd (작업 일자)
+		stdgCd: 법정동 코드 10자리
+
+
+
+
+
+----------
