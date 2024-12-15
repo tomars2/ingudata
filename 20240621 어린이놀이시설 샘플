@@ -1,0 +1,50 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "SERVICE SUCCESS"
+        },
+        "body": {
+            "pageNo": "1",
+            "totalCount": 83291,
+            "items": [
+                {
+                    "OBJT_ID": "1",
+                    "FCLTY_CD1": "533451",
+                    "FCLTY_CD2": "1111010100",
+                    "FCLTY_CD3": "5",
+                    "FCLTY_CD4": "A003",
+                    "FCLTY_CD5": "C002",
+                    "FCLTY_CD6": "O002",
+                    "FCLTY_CD7": "B001",
+                    "FCLTY_NM": "청운공원 유아놀이터(인왕산도시자연공원)",
+                    "ADRES": "서울특별시 종로구 청운동 7-6",
+                    "CTPRVN_CD": "11",
+                    "SGG_CD": "11110",
+                    "X": "14133806.7283",
+                    "Y": "4521495.5632",
+                    "INSTL_DE": "20120611",
+                    "EMD_CD": "11110101"
+                    "AC_YN": null,
+                    "DEL_YN": null,
+                },
+                {
+                    "FCLTY_CD4": "A011",
+                    "FCLTY_CD5": "C002",
+                    "SGG_CD": "11110",
+                    "AC_YN": null,
+                    "FCLTY_CD6": "O002",
+                    "FCLTY_CD7": "B001",
+                    "FCLTY_NM": "청운초 놀이시설",
+                    "ADRES": "서울특별시 종로구 자하문로 105",
+                    "FCLTY_CD1": "28757",
+                    "FCLTY_CD2": "1111010100",
+                    "FCLTY_CD3": "1",
+                    "DEL_YN": null,
+                    "X": "14134196.6697",
+                    "CTPRVN_CD": "11",
+                    "Y": "4521062.3329",
+                    "OBJT_ID": "2",
+                    "INSTL_DE": "20080616",
+                    "EMD_CD": "11110101"
+                },
