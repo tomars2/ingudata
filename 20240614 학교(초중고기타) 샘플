@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <header>
+        <resultCode>00</resultCode>
+        <resultMsg>SERVICE SUCCESS</resultMsg>
+    </header>
+    <body>
+        <items>
+            <item>
+                <SECD>03</SECD>
+                <FCLTYCD>SH00011642</FCLTYCD>
+                <FCLTYTY>01</FCLTYTY>
+                <FCLTYNM>인천작동초등학교</FCLTYNM>
+                <LNMADR>인천광역시 계양구 작전동 920</LNMADR>
+                <LATITUDE>37.5288644</LATITUDE>
+                <LONGITUDE>126.7356736</LONGITUDE>
+                <X>14108151</X>
+                <Y>4513082</Y>
+            </item>
+            <item>
+                <SECD>03</SECD>
+                <FCLTYCD>SH00009504</FCLTYCD>
+                <FCLTYTY>01</FCLTYTY>
+                <FCLTYNM>인천작전초등학교</FCLTYNM>
+                <LNMADR>인천광역시 계양구 작전동 42-5</LNMADR>
+                <LATITUDE>37.5349659</LATITUDE>
+                <LONGITUDE>126.7286743</LONGITUDE>
+                <X>14107371</X>
+                <Y>4513939</Y>
+            </item>
+            <item>
+                <SECD>03</SECD>
+                <FCLTYCD>SH00009493</FCLTYCD>
+                <FCLTYTY>01</FCLTYTY>
+                <FCLTYNM>인천장도초등학교</FCLTYNM>
+                <LNMADR>인천광역시 남동구 논현동 600-2</LNMADR>
+                <LATITUDE>37.4079265</LATITUDE>
+                <LONGITUDE>126.7336358</LONGITUDE>
+                <X>14107924</X>
+                <Y>4496120</Y>
+            </item>
+            <item>
+                <SECD>03</SECD>
+                <FCLTYCD>SH00000671</FCLTYCD>
+                <FCLTYTY>01</FCLTYTY>
+                <FCLTYNM>인천장서초등학교</FCLTYNM>
+                <LNMADR>인천광역시 남동구 서창동 678</LNMADR>
+                <LATITUDE>37.4292149957</LATITUDE>
+                <LONGITUDE>126.745327377</LONGITUDE>
+                <X>14109225</X>
+                <Y>4499104</Y>
+            </item>
+            <item>
+                <SECD>03</SECD>
+                <FCLTYCD>SH00011636</FCLTYCD>
+                <FCLTYTY>01</FCLTYTY>
+                <FCLTYNM>인천장수초등학교</FCLTYNM>
+                <LNMADR>인천광역시 남동구 만수동 1005-2</LNMADR>
+                <LATITUDE>37.4504134</LATITUDE>
+                <LONGITUDE>126.7419009</LONGITUDE>
+                <X>14108844</X>
+                <Y>4502076</Y>
+            </item>
