@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <header>
+        <resultCode>00</resultCode>
+        <resultMsg>SERVICE SUCCESS</resultMsg>
+    </header>
+    <body>
+        <items>
+            <item>
+                <NUM>256</NUM>
+                <DUTYADDR>울산광역시 남구 수암로 138, 9,11층 (야음동)</DUTYADDR>
+                <DUTYDIV>E</DUTYDIV>
+                <DUTYDIVNAME>한방병원</DUTYDIVNAME>
+                <DUTYEMCLS>G099</DUTYEMCLS>
+                <DUTYEMCLSNAME>응급의료기관 이외</DUTYEMCLSNAME>
+                <DUTYERYN>2</DUTYERYN>
+                <DUTYETC>null</DUTYETC>
+                <DUTYMAPIMG>null</DUTYMAPIMG>
+                <DUTYNAME>자연뜰한방병원</DUTYNAME>
+                <DUTYTEL1>052-1670-8075</DUTYTEL1>
+                <DUTYTEL3>null</DUTYTEL3>
+                <DUTYTIME1C>2000</DUTYTIME1C>
+                <DUTYTIME2C>2000</DUTYTIME2C>
+                <DUTYTIME3C>2000</DUTYTIME3C>
+                <DUTYTIME4C>2000</DUTYTIME4C>
+                <DUTYTIME5C>2000</DUTYTIME5C>
+                <DUTYTIME6C>1800</DUTYTIME6C>
+                <DUTYTIME7C>1800</DUTYTIME7C>
+                <DUTYTIME8C>1800</DUTYTIME8C>
+                <DUTYTIME1S>0930</DUTYTIME1S>
+                <DUTYTIME2S>0930</DUTYTIME2S>
+                <DUTYTIME3S>0930</DUTYTIME3S>
+                <DUTYTIME4S>0930</DUTYTIME4S>
+                <DUTYTIME5S>0930</DUTYTIME5S>
+                <DUTYTIME6S>0900</DUTYTIME6S>
+                <DUTYTIME7S>0900</DUTYTIME7S>
+                <DUTYTIME8S>0900</DUTYTIME8S>
+                <HPID>C1700676</HPID>
+                <POSTCDN1>447</POSTCDN1>
+                <POSTCDN2>50 </POSTCDN2>
+                <DUTYINF>의학적 근거와 기술을 중심으로 건강한 자연 그대로의 균형 상태로 복귀하는 치료 연구에 매진하며 정직한 나눔을 통해 의학 한의학 협진의 새로운 치료문화를 이끌어갑니다.</DUTYINF>
+                <LON>129.321919110368</LON>
+                <LAT>35.5269828679847</LAT>
+                <X>14396050.18377508</X>
+                <Y>4235728.631401233</Y>
+                <DUTYWEEKENDAT>Y</DUTYWEEKENDAT>
+            </item>
+            <item>
+                <NUM>440</NUM>
+                <DUTYADDR>경기도 안산시 단원구 광덕2로 164, 더와이피 2,3층 (고잔동)</DUTYADDR>
+                <DUTYDIV>E</DUTYDIV>
+                <DUTYDIVNAME>한방병원</DUTYDIVNAME>
+                <DUTYEMCLS>G099</DUTYEMCLS>
+                <DUTYEMCLSNAME>응급의료기관 이외</DUTYEMCLSNAME>
+                <DUTYERYN>2</DUTYERYN>
+                <DUTYETC>null</DUTYETC>
+                <DUTYMAPIMG>null</DUTYMAPIMG>
+                <DUTYNAME>서연의료소비자생활협동조합성심한방병원</DUTYNAME>
+                <DUTYTEL1>031-401-2468</DUTYTEL1>
+                <DUTYTEL3>null</DUTYTEL3>
+                <DUTYTIME1C>1800</DUTYTIME1C>
+                <DUTYTIME2C>1800</DUTYTIME2C>
+                <DUTYTIME3C>1800</DUTYTIME3C>
+                <DUTYTIME4C>1800</DUTYTIME4C>
+                <DUTYTIME5C>1800</DUTYTIME5C>
+                <DUTYTIME6C>1400</DUTYTIME6C>
+                <DUTYTIME7C>null</DUTYTIME7C>
+                <DUTYTIME8C>null</DUTYTIME8C>
+                <DUTYTIME1S>0900</DUTYTIME1S>
+                <DUTYTIME2S>0900</DUTYTIME2S>
+                <DUTYTIME3S>0900</DUTYTIME3S>
+                <DUTYTIME4S>0900</DUTYTIME4S>
+                <DUTYTIME5S>0900</DUTYTIME5S>
+                <DUTYTIME6S>0900</DUTYTIME6S>
+                <DUTYTIME7S>null</DUTYTIME7S>
+                <DUTYTIME8S>null</DUTYTIME8S>
+                <HPID>B2103488</HPID>
+                <POSTCDN1>154</POSTCDN1>
+                <POSTCDN2>76 </POSTCDN2>
+                <DUTYINF>점심시간 13~14시</DUTYINF>
+                <LON>126.80274728831992</LON>
+                <LAT>37.34222834954059</LAT>
+                <X>14115617.259323925</X>
+                <Y>4486916.967761366</Y>
+                <DUTYWEEKENDAT>N</DUTYWEEKENDAT>
+            </item>
+            <item>
+                <NUM>702</NUM>
+                <DUTYADDR>경기도 안산시 단원구 선부광장로 95, 203,301~305호 (선부동)</DUTYADDR>
+                <DUTYDIV>E</DUTYDIV>
+                <DUTYDIVNAME>한방병원</DUTYDIVNAME>
+                <DUTYEMCLS>G099</DUTYEMCLS>
+                <DUTYEMCLSNAME>응급의료기관 이외</DUTYEMCLSNAME>
+                <DUTYERYN>2</DUTYERYN>
+                <DUTYETC>null</DUTYETC>
+                <DUTYMAPIMG>null</DUTYMAPIMG>
+                <DUTYNAME>늘푸른한방병원</DUTYNAME>
+                <DUTYTEL1>031-475-1079</DUTYTEL1>
+                <DUTYTEL3>null</DUTYTEL3>
+                <DUTYTIME1C>1800</DUTYTIME1C>
+                <DUTYTIME2C>1800</DUTYTIME2C>
+                <DUTYTIME3C>1800</DUTYTIME3C>
+                <DUTYTIME4C>1800</DUTYTIME4C>
+                <DUTYTIME5C>1800</DUTYTIME5C>
+                <DUTYTIME6C>1500</DUTYTIME6C>
+                <DUTYTIME7C>null</DUTYTIME7C>
+                <DUTYTIME8C>null</DUTYTIME8C>
+                <DUTYTIME1S>0900</DUTYTIME1S>
+                <DUTYTIME2S>0900</DUTYTIME2S>
+                <DUTYTIME3S>0900</DUTYTIME3S>
+                <DUTYTIME4S>0900</DUTYTIME4S>
+                <DUTYTIME5S>0900</DUTYTIME5S>
+                <DUTYTIME6S>0900</DUTYTIME6S>
+                <DUTYTIME7S>null</DUTYTIME7S>
+                <DUTYTIME8S>null</DUTYTIME8S>
+                <HPID>B2100008</HPID>
+                <POSTCDN1>153</POSTCDN1>
+                <POSTCDN2>67 </POSTCDN2>
+                <DUTYINF>null</DUTYINF>
+                <LON>126.80816463163963</LON>
+                <LAT>37.333194513041114</LAT>
+                <X>14116220.315223727</X>
+                <Y>4485652.127624248</Y>
+                <DUTYWEEKENDAT>N</DUTYWEEKENDAT>
+            </item>
