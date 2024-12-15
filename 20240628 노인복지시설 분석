@@ -1,0 +1,43 @@
+자료 출처
+	safemap.go.kr 생활안전정보
+	노인복지시설 분석
+
+자료 생성 주기: 년
+
+자료 형식: XML
+
+전국 자료 받는 방법
+	http://safemap.go.kr/openApiService/data/getEWFData.do?serviceKey=FBGIOLF2-FBGI-FBGI-FBGI-FBGIOLF21T&numOfRows=100000&pageNo=1&dataType=XML&Fclty_Cd=513011
+
++API 설정
+	serviceKey		인증키. FBGIOLF2-FBGI-FBGI-FBGI-FBGIOLF21T
+	numOfRows		페이지 크기. 100000
+	pageNo			페이지 번호. 기본값 : 1
+	dataType		XML
+	Fclty_Cd		513011
+
+JSON 코드 분석
+	코드 샘플
+	<item>
+		<OBJT_ID>64869</OBJT_ID>
+		<FCLTY_CD>513011</FCLTY_CD>
+		<FCLTY_TY>양로시설</FCLTY_TY>
+		<FCLTY_NM>청운양로원</FCLTY_NM>
+		<RN_ADRES>서울특별시 종로구 비봉길 76</RN_ADRES>
+		<EMD_CD>11110182</EMD_CD>
+		<CTPRVN_CD>11</CTPRVN_CD>
+		<SGG_CD>11110</SGG_CD>
+		<X>14132518.98</X>
+		<Y>4525221.499</Y>
+		<TELNO>02-379-9232</TELNO>
+		<ADRES>서울특별시 종로구 구기동 216</ADRES>
+		<DATA_YR>2022</DATA_YR>
+	</item>
+
+법정동코드에서 사용하는 필드명으로 통일 필요
+	추가 필드
+		ID: 'D' + X 좌표 정수 + Y 좌표 정수
+		DATE: yyyy-mm-dd (작업 일자)
+		stdgCd: 법정동 코드 10자리
+
+----------
