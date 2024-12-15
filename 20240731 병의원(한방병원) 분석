@@ -1,0 +1,91 @@
+자료 출처
+	safemap.go.kr 생활안전정보
+	한방병의원
+
+자료 생성 주기: 년
+
+자료 형식: XML
+
+API 설정
+	serviceKey		인증키. FBGIOLF2-FBGI-FBGI-FBGI-FBGIOLF21T
+	numOfRows		페이지 크기. 100000
+	pageNo			페이지 번호. 기본값 : 1
+	dataType		XML
+	DutyDiv			E/G (한의원 : E, 한방병원 : G)
+
+전국 자료 받는 방법
+	http://safemap.go.kr/openApiService/data/GetCClinicHospitalData.do?serviceKey=FBGIOLF2-FBGI-FBGI-FBGI-FBGIOLF21T&numOfRows=100000&pageNo=1&dataType=XML&DutyDiv=N
+
+	한의원과 한방병원 2개 다 다운로드
+		DutyDiv
+			E 설정으로 한방병원 다운로드 1번
+			G 설정으로 한의원 다운로드 1번
+
+JSON 코드 분석
+	코드 샘플
+	<item>
+		<NUM>256</NUM>
+		<HPID>C1700676</HPID>
+		<DUTYNAME>자연뜰한방병원</DUTYNAME>
+		<DUTYADDR>울산광역시 남구 수암로 138, 9,11층 (야음동)</DUTYADDR>
+		<DUTYDIVNAME>한방병원</DUTYDIVNAME>
+		<DUTYTEL1>052-1670-8075</DUTYTEL1>
+		<LON>129.321919110368</LON>
+		<LAT>35.5269828679847</LAT>
+		<X>14396050.18377508</X>
+		<Y>4235728.631401233</Y>
+		<DUTYTEL3>null</DUTYTEL3>
+		<DUTYTIME1C>2000</DUTYTIME1C>
+		<DUTYTIME2C>2000</DUTYTIME2C>
+		<DUTYTIME3C>2000</DUTYTIME3C>
+		<DUTYTIME4C>2000</DUTYTIME4C>
+		<DUTYTIME5C>2000</DUTYTIME5C>
+		<DUTYTIME6C>1800</DUTYTIME6C>
+		<DUTYTIME7C>1800</DUTYTIME7C>
+		<DUTYTIME8C>1800</DUTYTIME8C>
+		<DUTYTIME1S>0930</DUTYTIME1S>
+		<DUTYTIME2S>0930</DUTYTIME2S>
+		<DUTYTIME3S>0930</DUTYTIME3S>
+		<DUTYTIME4S>0930</DUTYTIME4S>
+		<DUTYTIME5S>0930</DUTYTIME5S>
+		<DUTYTIME6S>0900</DUTYTIME6S>
+		<DUTYTIME7S>0900</DUTYTIME7S>
+		<DUTYTIME8S>0900</DUTYTIME8S>
+		<POSTCDN1>447</POSTCDN1>
+		<POSTCDN2>50 </POSTCDN2>
+		<DUTYDIV>E</DUTYDIV>
+		<DUTYEMCLS>G099</DUTYEMCLS>
+		<DUTYEMCLSNAME>응급의료기관 이외</DUTYEMCLSNAME>
+		<DUTYERYN>2</DUTYERYN>
+		<DUTYETC>null</DUTYETC>
+		<DUTYMAPIMG>null</DUTYMAPIMG>
+		<DUTYINF>의학적 근거와 기술을 중심으로 건강한 자연 그대로의 균형 상태로 복귀하는 치료 연구에 매진하며 정직한 나눔을 통해 의학 한의학 협진의 새로운 치료문화를 이끌어갑니다.</DUTYINF>
+		<DUTYWEEKENDAT>Y</DUTYWEEKENDAT>
+	</item>
+
+데이터 전처리
+	XML 필드
+		DUTYADDR: 주소
+			울산광역시 남구 수암로 138, 9,11층 (야음동)에서
+				법정동코드에서 사용하는 필드명으로 통일 필요
+				"울산광역시 남구" 문자열로 법정동 코드 10자리로 Mapping 필요
+		DUTYDIV: 종류
+			한의원 : E, 한방병원 : G
+		DUTYDIVNAME
+			한의원 / 한방병원
+		LON:	위도
+		LAT:	경도
+		X:		지도의 X 자료
+		Y:		지도의 Y 자료
+		DUTYTEL1: 전화
+		DUTYWEEKENDAT: 주말 영업 (Y/N)
+	추가 필드
+		ID: 'D' + X 좌표 정수 + Y 좌표 정수
+		DATE: yyyy-mm-dd (작업 일자)
+		stdgCd: 법정동 코드 10자리
+
+
+
+
+
+----------
