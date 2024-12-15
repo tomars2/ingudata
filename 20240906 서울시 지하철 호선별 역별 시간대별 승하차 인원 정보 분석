@@ -1,0 +1,102 @@
+자료 출처
+	data.seoul.go.kr/dataList/OA-12252/S/1/datasetView.do
+	서울시 지하철 호선별 역별 시간대별 승하차 인원 정보
+
+자료 생성 주기: 월
+
+자료 형식: JSON
+
+API 설정
+	serviceKey		인증키. 506367615861726b38386b6a77726b
+	numOfRows		페이지 크기. 1000
+	pageNo			페이지 번호. 기본값 : 1
+	dataType		json
+	yyyymm			202407
+
+자료 받는 방법
+	http://openapi.seoul.go.kr:8088/506367615861726b38386b6a77726b/json/CardSubwayTime/1/1000/202407/
+
+
+JSON 코드 분석
+	코드 샘플
+{
+	"USE_MM": "202407",
+	"SBWY_ROUT_LN_NM": "1호선",
+	"STTN": "서울역",
+	"HR_4_GET_ON_NOPE": 589.0,
+	"HR_4_GET_OFF_NOPE": 18.0,
+	"HR_5_GET_ON_NOPE": 8057.0,
+	"HR_5_GET_OFF_NOPE": 9031.0,
+	"HR_6_GET_ON_NOPE": 13979.0,
+	"HR_6_GET_OFF_NOPE": 55919.0,
+	"HR_7_GET_ON_NOPE": 42093.0,
+	"HR_7_GET_OFF_NOPE": 124856.0,
+	"HR_8_GET_ON_NOPE": 74047.0,
+	"HR_8_GET_OFF_NOPE": 262620.0,
+	"HR_9_GET_ON_NOPE": 66402.0,
+	"HR_9_GET_OFF_NOPE": 164049.0,
+	"HR_10_GET_ON_NOPE": 63254.0,
+	"HR_10_GET_OFF_NOPE": 86988.0,
+	"HR_11_GET_ON_NOPE": 79328.0,
+	"HR_11_GET_OFF_NOPE": 78916.0,
+	"HR_12_GET_ON_NOPE": 94775.0,
+	"HR_12_GET_OFF_NOPE": 85265.0,
+	"HR_13_GET_ON_NOPE": 90078.0,
+	"HR_13_GET_OFF_NOPE": 82708.0,
+	"HR_14_GET_ON_NOPE": 80189.0,
+	"HR_14_GET_OFF_NOPE": 72995.0,
+	"HR_15_GET_ON_NOPE": 104338.0,
+	"HR_15_GET_OFF_NOPE": 78621.0,
+	"HR_16_GET_ON_NOPE": 118717.0,
+	"HR_16_GET_OFF_NOPE": 81581.0,
+	"HR_17_GET_ON_NOPE": 197775.0,
+	"HR_17_GET_OFF_NOPE": 91581.0,
+	"HR_18_GET_ON_NOPE": 245454.0,
+	"HR_18_GET_OFF_NOPE": 94949.0,
+	"HR_19_GET_ON_NOPE": 122252.0,
+	"HR_19_GET_OFF_NOPE": 63098.0,
+	"HR_20_GET_ON_NOPE": 85070.0,
+	"HR_20_GET_OFF_NOPE": 45334.0,
+	"HR_21_GET_ON_NOPE": 87900.0,
+	"HR_21_GET_OFF_NOPE": 40261.0,
+	"HR_22_GET_ON_NOPE": 54718.0,
+	"HR_22_GET_OFF_NOPE": 28535.0,
+	"HR_23_GET_ON_NOPE": 25973.0,
+	"HR_23_GET_OFF_NOPE": 13125.0,
+	"HR_0_GET_ON_NOPE": 2894.0,
+	"HR_0_GET_OFF_NOPE": 3784.0,
+	"HR_1_GET_ON_NOPE": 1.0,
+	"HR_1_GET_OFF_NOPE": 242.0,
+	"HR_2_GET_ON_NOPE": 0.0,
+	"HR_2_GET_OFF_NOPE": 0.0,
+	"HR_3_GET_ON_NOPE": 0.0,
+	"HR_3_GET_OFF_NOPE": 0.0,
+	"JOB_YMD": "20240803"},
+}
+
+데이터 전처리
+	XML 필드
+		DUTYADDR: 주소
+			충청남도 서천군 서천읍 사곡길 26에서
+				법정동코드에서 사용하는 필드명으로 통일 필요
+				"충청남도 서천군" 문자열로 법정동 코드 10자리로 Mapping 필요
+		DUTYDIV: 종류
+			보건소 : R
+		DUTYDIVNAME
+			보건소
+		LON:	위도
+		LAT:	경도
+		X:		지도의 X 자료
+		Y:		지도의 Y 자료
+		DUTYTEL1: 전화
+		DUTYWEEKENDAT: 주말 영업 (Y/N)
+	추가 필드
+		ID: 'D' + X 좌표 정수 + Y 좌표 정수
+		DATE: yyyy-mm-dd (작업 일자)
+		stdgCd: 법정동 코드 10자리
+
+
+
+
+
+----------
