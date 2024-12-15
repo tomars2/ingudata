@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <header>
+        <resultCode>00</resultCode>
+        <resultMsg>SERVICE SUCCESS</resultMsg>
+    </header>
+    <body>
+        <items>
+            <item>
+                <NUM>58</NUM>
+                <DUTYADDR>충청북도 괴산군 문광면 흑석2길 20-148</DUTYADDR>
+                <DUTYDIV>D</DUTYDIV>
+                <DUTYDIVNAME>요양병원</DUTYDIVNAME>
+                <DUTYEMCLS>G099</DUTYEMCLS>
+                <DUTYEMCLSNAME>응급의료기관 이외</DUTYEMCLSNAME>
+                <DUTYERYN>2</DUTYERYN>
+                <DUTYETC>null</DUTYETC>
+                <DUTYMAPIMG>충북 괴산군 문광면 흑석2길 20-148</DUTYMAPIMG>
+                <DUTYNAME>의료법인동숙의료재단벧엘기독병원</DUTYNAME>
+                <DUTYTEL1>043-833-1004</DUTYTEL1>
+                <DUTYTEL3>null</DUTYTEL3>
+                <DUTYTIME1C>1800</DUTYTIME1C>
+                <DUTYTIME2C>1800</DUTYTIME2C>
+                <DUTYTIME3C>1800</DUTYTIME3C>
+                <DUTYTIME4C>1800</DUTYTIME4C>
+                <DUTYTIME5C>1800</DUTYTIME5C>
+                <DUTYTIME6C>null</DUTYTIME6C>
+                <DUTYTIME7C>null</DUTYTIME7C>
+                <DUTYTIME8C>null</DUTYTIME8C>
+                <DUTYTIME1S>0900</DUTYTIME1S>
+                <DUTYTIME2S>0900</DUTYTIME2S>
+                <DUTYTIME3S>0900</DUTYTIME3S>
+                <DUTYTIME4S>0900</DUTYTIME4S>
+                <DUTYTIME5S>0900</DUTYTIME5S>
+                <DUTYTIME6S>null</DUTYTIME6S>
+                <DUTYTIME7S>null</DUTYTIME7S>
+                <DUTYTIME8S>null</DUTYTIME8S>
+                <HPID>A2300858</HPID>
+                <POSTCDN1>280</POSTCDN1>
+                <POSTCDN2>57 </POSTCDN2>
+                <DUTYINF>정신과전문병원 충북기독병원입니다.</DUTYINF>
+                <LON>127.82434575220366</LON>
+                <LAT>36.748857105054945</LAT>
+                <X>14229341.080118654</X>
+                <Y>4404158.2809284795</Y>
+                <DUTYWEEKENDAT>N</DUTYWEEKENDAT>
+            </item>
+            <item>
+                <NUM>88</NUM>
+                <DUTYADDR>충청남도 서천군 화양면 활산로 245, 동서천요양병원</DUTYADDR>
+                <DUTYDIV>D</DUTYDIV>
+                <DUTYDIVNAME>요양병원</DUTYDIVNAME>
+                <DUTYEMCLS>G099</DUTYEMCLS>
+                <DUTYEMCLSNAME>응급의료기관 이외</DUTYEMCLSNAME>
+                <DUTYERYN>2</DUTYERYN>
+                <DUTYETC>null</DUTYETC>
+                <DUTYMAPIMG>null</DUTYMAPIMG>
+                <DUTYNAME>동서천요양병원</DUTYNAME>
+                <DUTYTEL1>041-952-7147</DUTYTEL1>
+                <DUTYTEL3>null</DUTYTEL3>
+                <DUTYTIME1C>1800</DUTYTIME1C>
+                <DUTYTIME2C>1800</DUTYTIME2C>
+                <DUTYTIME3C>1800</DUTYTIME3C>
+                <DUTYTIME4C>1800</DUTYTIME4C>
+                <DUTYTIME5C>1800</DUTYTIME5C>
+                <DUTYTIME6C>null</DUTYTIME6C>
+                <DUTYTIME7C>null</DUTYTIME7C>
+                <DUTYTIME8C>null</DUTYTIME8C>
+                <DUTYTIME1S>0900</DUTYTIME1S>
+                <DUTYTIME2S>0900</DUTYTIME2S>
+                <DUTYTIME3S>0900</DUTYTIME3S>
+                <DUTYTIME4S>0900</DUTYTIME4S>
+                <DUTYTIME5S>0900</DUTYTIME5S>
+                <DUTYTIME6S>null</DUTYTIME6S>
+                <DUTYTIME7S>null</DUTYTIME7S>
+                <DUTYTIME8S>null</DUTYTIME8S>
+                <HPID>C2401309</HPID>
+                <POSTCDN1>336</POSTCDN1>
+                <POSTCDN2>30 </POSTCDN2>
+                <DUTYINF>null</DUTYINF>
+                <LON>126.80860929480657</LON>
+                <LAT>36.06651063758428</LAT>
+                <X>14116269.814901046</X>
+                <Y>4309776.996696177</Y>
+                <DUTYWEEKENDAT>N</DUTYWEEKENDAT>
+            </item>
