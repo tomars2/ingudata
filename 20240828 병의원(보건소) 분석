@@ -1,0 +1,89 @@
+자료 출처
+	safemap.go.kr 생활안전정보
+	보건소
+
+자료 생성 주기: 년
+
+자료 형식: XML
+
+API 설정
+	serviceKey		인증키. FBGIOLF2-FBGI-FBGI-FBGI-FBGIOLF21T
+	numOfRows		페이지 크기. 100000
+	pageNo			페이지 번호. 기본값 : 1
+	dataType		XML
+
+전국 자료 받는 방법
+	http://safemap.go.kr/openApiService/data/getHealthCenterData.do?serviceKey=FBGIOLF2-FBGI-FBGI-FBGI-FBGIOLF21T&numOfRows=100000&pageNo=1&dataType=XML&DutyDiv=R
+
+	한의원과 보건소 다운로드
+		DutyDiv
+			보건소 : R
+
+JSON 코드 분석
+	코드 샘플
+	<item>
+		<NUM>131</NUM>
+		<DUTYADDR>충청남도 서천군 서천읍 사곡길 26</DUTYADDR>
+		<DUTYDIV>R</DUTYDIV>
+		<DUTYDIVNAME>보건소</DUTYDIVNAME>
+		<DUTYEMCLS>G099</DUTYEMCLS>
+		<DUTYEMCLSNAME>응급의료기관 이외</DUTYEMCLSNAME>
+		<DUTYERYN>2</DUTYERYN>
+		<DUTYETC>null</DUTYETC>
+		<DUTYMAPIMG>null</DUTYMAPIMG>
+		<DUTYNAME>서천군보건소</DUTYNAME>
+		<LON>126.689483333333328</LON>
+		<LAT>36.082161111111112</LAT>
+		<X>14103008.773529584</X>
+		<Y>4311932.511377574</Y>
+		<DUTYTEL1>041-950-6750</DUTYTEL1>
+		<DUTYTEL3>null</DUTYTEL3>
+		<DUTYTIME1C>1800</DUTYTIME1C>
+		<DUTYTIME2C>1800</DUTYTIME2C>
+		<DUTYTIME3C>1800</DUTYTIME3C>
+		<DUTYTIME4C>1800</DUTYTIME4C>
+		<DUTYTIME5C>1800</DUTYTIME5C>
+		<DUTYTIME6C>null</DUTYTIME6C>
+		<DUTYTIME7C>null</DUTYTIME7C>
+		<DUTYTIME8C>null</DUTYTIME8C>
+		<DUTYTIME1S>0900</DUTYTIME1S>
+		<DUTYTIME2S>0900</DUTYTIME2S>
+		<DUTYTIME3S>0900</DUTYTIME3S>
+		<DUTYTIME4S>0900</DUTYTIME4S>
+		<DUTYTIME5S>0900</DUTYTIME5S>
+		<DUTYTIME6S>null</DUTYTIME6S>
+		<DUTYTIME7S>null</DUTYTIME7S>
+		<DUTYTIME8S>null</DUTYTIME8S>
+		<HPID>E2400014</HPID>
+		<POSTCDN1>325</POSTCDN1>
+		<POSTCDN2>802</POSTCDN2>
+		<DUTYINF>성인 발열 및 간단한 소화계 진료만 가능</DUTYINF>
+		<DUTYWEEKENDAT>N</DUTYWEEKENDAT>
+	</item>
+
+데이터 전처리
+	XML 필드
+		DUTYADDR: 주소
+			충청남도 서천군 서천읍 사곡길 26에서
+				법정동코드에서 사용하는 필드명으로 통일 필요
+				"충청남도 서천군" 문자열로 법정동 코드 10자리로 Mapping 필요
+		DUTYDIV: 종류
+			보건소 : R
+		DUTYDIVNAME
+			보건소
+		LON:	위도
+		LAT:	경도
+		X:		지도의 X 자료
+		Y:		지도의 Y 자료
+		DUTYTEL1: 전화
+		DUTYWEEKENDAT: 주말 영업 (Y/N)
+	추가 필드
+		ID: 'D' + X 좌표 정수 + Y 좌표 정수
+		DATE: yyyy-mm-dd (작업 일자)
+		stdgCd: 법정동 코드 10자리
+
+
+
+
+
+----------
