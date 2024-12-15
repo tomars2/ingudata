@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tbTraficEntrcLft>
+    <list_total_count>83</list_total_count>
+    <RESULT>
+        <CODE>INFO-000</CODE>
+        <MESSAGE>정상 처리되었습니다</MESSAGE>
+    </RESULT>
+    <row>
+        <NODE_TYPE>NODE</NODE_TYPE>
+        <NODE_WKT>POINT(127.01587272865775 37.57169713324989)</NODE_WKT>
+        <NODE_ID>99451</NODE_ID>
+        <NODE_TYPE_CD>1</NODE_TYPE_CD>
+        <SGG_CD>1111000000</SGG_CD>
+        <SGG_NM>종로구</SGG_NM>
+        <EMD_CD>1111017500</EMD_CD>
+        <EMD_NM>숭인동</EMD_NM>
+        <SBWY_STN_CD>268</SBWY_STN_CD>
+        <SBWY_STN_NM>동묘앞</SBWY_STN_NM>
+    </row>
+    <row>
+        <NODE_TYPE>NODE</NODE_TYPE>
+        <NODE_WKT>POINT(127.01520097725069 37.5727631714696)</NODE_WKT>
+        <NODE_ID>160668</NODE_ID>
+        <NODE_TYPE_CD>1</NODE_TYPE_CD>
+        <SGG_CD>1111000000</SGG_CD>
+        <SGG_NM>종로구</SGG_NM>
+        <EMD_CD>1111017400</EMD_CD>
+        <EMD_NM>창신동</EMD_NM>
+        <SBWY_STN_CD>268</SBWY_STN_CD>
+        <SBWY_STN_NM>동묘앞</SBWY_STN_NM>
+    </row>
+    <row>
+        <NODE_TYPE>NODE</NODE_TYPE>
+        <NODE_WKT>POINT(126.99215227845464 37.57106843929747)</NODE_WKT>
+        <NODE_ID>135627</NODE_ID>
+        <NODE_TYPE_CD>1</NODE_TYPE_CD>
+        <SGG_CD>1111000000</SGG_CD>
+        <SGG_NM>종로구</SGG_NM>
+        <EMD_CD>1111015100</EMD_CD>
+        <EMD_NM>묘동</EMD_NM>
+        <SBWY_STN_CD>265</SBWY_STN_CD>
+        <SBWY_STN_NM>종로3가</SBWY_STN_NM>
+    </row>
+    <row>
+        <NODE_TYPE>NODE</NODE_TYPE>
+        <NODE_WKT>POINT(126.99186553544038 37.5705742122576)</NODE_WKT>
+        <NODE_ID>135668</NODE_ID>
+        <NODE_TYPE_CD>1</NODE_TYPE_CD>
+        <SGG_CD>1111000000</SGG_CD>
+        <SGG_NM>종로구</SGG_NM>
+        <EMD_CD>1111015600</EMD_CD>
+        <EMD_NM>종로3가</EMD_NM>
+        <SBWY_STN_CD>265</SBWY_STN_CD>
+        <SBWY_STN_NM>종로3가</SBWY_STN_NM>
+    </row>
+    <row>
+        <NODE_TYPE>NODE</NODE_TYPE>
+        <NODE_WKT>POINT(127.01550585346979 37.573234568417995)</NODE_WKT>
+        <NODE_ID>159685</NODE_ID>
+        <NODE_TYPE_CD>1</NODE_TYPE_CD>
+        <SGG_CD>1111000000</SGG_CD>
+        <SGG_NM>종로구</SGG_NM>
+        <EMD_CD>1111017400</EMD_CD>
+        <EMD_NM>창신동</EMD_NM>
+        <SBWY_STN_CD>268</SBWY_STN_CD>
+        <SBWY_STN_NM>동묘앞</SBWY_STN_NM>
+    </row>
