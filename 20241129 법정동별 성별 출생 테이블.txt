@@ -1,0 +1,28 @@
+법정동별 성별 출생 테이블
+
+JSON 항목을 테이블로 변환하는 규칙
+	statsYm: 202312를 year에 2023, month에 12 저장
+	stdgCd: 4111000000를 adrs_code에 저장
+	ctpvNm:			삭제. 경기도
+	sggNm:			삭제. 수원시
+	maleNmprCnt: 17 => sum_male에 저장	
+	femlNmprCnt: 18 => sum_female에 저장
+	totNmprCnt: 35 => total에 저장
+
+테이블 생성
+	CREATE TABLE `people_birth` (
+	`seq` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '순번,
+		`year` INT(11) NOT NULL  COMMENT '연도',
+		`month` INT(11) NOT NULL DEFAULT '' COMMENT '월',
+		`adrs_code` VARCHAR(30) NOT NULL DEFAULT 0 COMMENT '주소_코드',
+		`sum_male` INT(11) NOT NULL  COMMENT '합계_남성',
+		`sum_female` INT(11) NOT NULL  COMMENT '합계_여성',
+		`total` INT(11) NOT NULL  COMMENT '총계',
+		`remark` VARCHAR(200) NOT NULL  COMMENT '비고',
+		`ins_user_id` VARCHAR(30) NOT NULL  COMMENT '추가_사용자_ID',
+		`ins_dtm` TIMESTAMP NULL DEFAULT current_timestamp() COMMENT '추가_일시',
+		`upd_user_id` VARCHAR(30) NOT NULL  COMMENT '갱신_사용자_ID',
+		`upd_dtm` TIMESTAMP NULL DEFAULT current_timestamp() COMMENT '갱신_일시'
+	);
+	ALTER TABLE ingu.people_birth COMMENT='법정동 출생';
+	ALTER TABLE `people_birth` ADD PRIMARY KEY (`seq`);
