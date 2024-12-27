@@ -25,6 +25,9 @@ API 설정
 	numOfRows		페이지 크기. 페이지당 목록 수(1~100)(기본값 : 10)
 	pageNo			페이지 번호. 기본값 : 1
 
+테이블 필드 정의
+	seq, year, month, address_code_from, address_code_to, gender, age, count, sum_male, sum_female, total, remark, insert_user_id, insert_datetime, update_user_id, update_datetime
+
 JSON 코드 분석
 	코드 샘플
 	{
