@@ -30,3 +30,6 @@ JSON 코드 분석
 		"femlNmprCnt": "18",
 		"totNmprCnt": "35",
 	},
+
+테이블 필드 정의
+	seq, year, month, address_code, sum_male, sum_female, total, remark, insert_user_id, insert_datetime, update_user_id, update_datetime
