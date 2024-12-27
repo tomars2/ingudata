@@ -1,0 +1,47 @@
+법정동 인구 및 세대수 테이블
+
+JSON 항목을 테이블로 변환하는 규칙
+	statsYm: 202312를 year에 2023, month에 12 저장
+	mvtAdmmCd: 4115057800를 adrs_code_fr에 저장
+	mvinAdmmCd: 1111051500를 adrs_code_to에 저장
+	mvtCtpvNm: 	삭제
+	mvtSggNm: 	삭제
+	mvtDongNm: 	삭제
+	mvinCtpvNm: 	삭제
+	mvinSggNm: 	삭제
+	mvinDongNm: 	삭제
+	male1AgeNmprCnt: 2 => gender에 male, age에 1, count에 2을 저장
+	male2AgeNmprCnt: 0 => 인구수가 0이면 삭제
+	feml52AgeNmprCnt: 1 => gender에 female, age에 52, count에 1을 저장
+	maleNmprCnt: 1 => sum_male에 저장	
+	femlNmprCnt: 2 => sum_female에 저장
+	totNmprCnt: 3 => total에 저장
+	liNm:			삭제,
+	dongNm:			삭제
+	admmCd:			삭제
+	stdgNm			삭제
+	ban:			삭제
+	tong:			삭제
+
+테이블 생성
+
+	CREATE TABLE `people_move` (
+	`seq` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '순번,
+		`year` INT(11) NOT NULL  COMMENT '연도',
+		`month` INT(11) NOT NULL  COMMENT '월',
+		`adrs_code_fr` VARCHAR(30) NOT NULL  COMMENT '주소_코드_이전',
+		`adrs_code_to` VARCHAR(30) NOT NULL  COMMENT '주소_코드_이후',
+		`gender` VARCHAR(30) NOT NULL  COMMENT '성별',
+		`age` INT(11) NOT NULL  COMMENT '나이',
+		`count` INT(11) NOT NULL  COMMENT '인원수',
+		`sum_male` INT(11) NOT NULL  COMMENT '합계_남성',
+		`sum_female` INT(11) NOT NULL  COMMENT '합계_여성',
+		`total` INT(11) NOT NULL  COMMENT '총계',
+		`remark` VARCHAR(200) NULL DEFAULT '' COMMENT '비고',
+		`ins_user_id` VARCHAR(30) NOT NULL  COMMENT '추가_사용자_ID',
+		`ins_dtm` TIMESTAMP NULL DEFAULT current_timestamp() COMMENT '추가_일시',
+		`upd_user_id` VARCHAR(30) NOT NULL  COMMENT '갱신_사용자_ID',
+		`upd_dtm` TIMESTAMP NULL DEFAULT current_timestamp() COMMENT '갱신_일시'
+	);
+	ALTER TABLE ingu.people_move COMMENT='법정동 인구이동';
+	ALTER TABLE `people_move` ADD PRIMARY KEY (`seq`);
