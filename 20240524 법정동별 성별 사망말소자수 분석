@@ -260,5 +260,8 @@ JSON 코드 분석
 		"feml83AgeNmprCnt": "1",
 		"feml70AgeNmprCnt": "1",
 		"admmCd": "",
+
+테이블 필드 정의
+	seq, year, month, address_code, sum_male, sum_female, total, remark, insert_user_id, insert_datetime, update_user_id, update_datetime
 		"feml96AgeNmprCnt": "0"
 	},
