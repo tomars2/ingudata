@@ -31,3 +31,6 @@ JSON 코드 분석
 		ID: 'D' + X 좌표 정수 + Y 좌표 정수
 		DATE: yyyy-mm-dd (작업 일자)
 		stdgCd: 법정동 코드 10자리
+
+테이블 필드 정의
+seq , year , month , adrs_code , facility_code , facility_name , adrs , lat , lon , map_x , map_y , remark , ins_user_id , ins_dtm , upd_user_id , upd_dtm
