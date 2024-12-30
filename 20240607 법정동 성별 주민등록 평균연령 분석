@@ -37,3 +37,6 @@ JSON 코드 분석
 		"dongNm": "",
 		"admmCd": ""
 	},
+
+테이블 필드 정의
+seq , year , month , adrs_code , male_age_average , female_age_average , total_age_average , remark , ins_user_id , ins_dtm , upd_user_id , upd_dtm
