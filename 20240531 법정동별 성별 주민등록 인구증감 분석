@@ -37,3 +37,5 @@ JSON 코드 분석
 		"femlNmprIncre": "-66",
 		"totNmprIncre": "-117",
 	},
+테이블 필드 정의
+seq , year , month , adrs_code , sum_male , sum_female , total , sum_male_last , sum_female_last , total_last , male_change , female_change , total_change , ins_user_id , ins_dtm , upd_user_id , upd_dtm
