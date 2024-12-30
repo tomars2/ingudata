@@ -1,0 +1,39 @@
+법정동별 성별 주민등록 인구증감 테이블
+
+JSON 항목을 테이블로 변환하는 규칙
+	statsYm: 202312를 year에 2023, month에 12 저장
+	stdgCd: 4111000000를 adrs_code에 저장
+	ctpvNm:			삭제. 경기도
+	sggNm:			삭제. 수원시
+	timtFemlNmprCnt: 73260 => sum_male에 저장	
+	timtMaleNmprCnt: 68601 => sum_female에 저장
+	timtNmprCnt: 141861 => total에 저장
+	lsmtMaleNmprCnt: 68652 => sum_male_last에 저장	
+	lsmtFemlNmprCnt: 73326 => sum_female_last에 저장
+	lsmtNmprCnt: 141978 => total_last에 저장
+	maleNmprIncre: -51 => male_change에 저장
+	femlNmprIncre: -66 => female_change에 저장
+	totNmprIncre: -117 => total_change에 저장
+
+테이블 생성
+	CREATE TABLE `people_change` (
+	`seq` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '순번,
+		`year` INT(11) NOT NULL  COMMENT '연도',
+		`month` INT(11) NOT NULL DEFAULT '' COMMENT '월',
+		`adrs_code` VARCHAR(30) NOT NULL DEFAULT 0 COMMENT '주소_코드',
+		`sum_male` INT(11) NOT NULL  COMMENT '합계_남성',
+		`sum_female` INT(11) NOT NULL  COMMENT '합계_여성',
+		`total` INT(11) NOT NULL  COMMENT '총계',
+		`sum_male_last` INT(11) NOT NULL  COMMENT '합계_남성_이전',
+		`sum_female_last` INT(11) NOT NULL  COMMENT '합계_여성_이전',
+		`total_last` INT(11) NOT NULL  COMMENT '총계_이전',
+		`male_change` INT(11) NOT NULL  COMMENT '남성_변화',
+		`female_change` INT(11) NOT NULL  COMMENT '여성_변화',
+		`total_change` INT(11) NOT NULL  COMMENT '총계_변화',
+		`ins_user_id` VARCHAR(30) NOT NULL  COMMENT '추가_사용자_ID',
+		`ins_dtm` TIMESTAMP NULL DEFAULT current_timestamp() COMMENT '추가_일시',
+		`upd_user_id` VARCHAR(30) NOT NULL  COMMENT '갱신_사용자_ID',
+		`upd_dtm` TIMESTAMP NULL DEFAULT current_timestamp() COMMENT '갱신_일시'
+	);
+	ALTER TABLE ingu.people_change COMMENT='법정동 인구증감';
+	ALTER TABLE `people_change` ADD PRIMARY KEY (`seq`);
