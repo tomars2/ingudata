@@ -1,0 +1,34 @@
+법정동 성별 주민등록 평균연령 테이블
+
+JSON 항목을 테이블로 변환하는 규칙
+	statsYm: 202312를 year에 2023, month에 12 저장
+	stdgCd: 4111000000를 adrs_code에 저장
+	ctpvNm:			삭제. 경기도
+	sggNm:			삭제. 수원시
+	maleAvrgAge: 44.8 => male_age_average에 저장
+	femlAvrgAge: 45.9 => female_age_average에 저장
+	totAvrgAge: 45.4 => total_age_average에 저장
+	tong:			삭제
+	stdgNm:			삭제
+	ban:			삭제
+	liNm:			삭제
+	dongNm:			삭제
+	admmCd:			삭제
+
+테이블 생성
+	CREATE TABLE `people_age average` (
+	`seq` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '순번,
+		`year` INT(11) NOT NULL  COMMENT '연도',
+		`month` INT(11) NOT NULL DEFAULT '' COMMENT '월',
+		`adrs_code` VARCHAR(30) NOT NULL DEFAULT 0 COMMENT '주소_코드',
+		`male_age_average` FLOAT NOT NULL DEFAULT 0 COMMENT '남성_나이_평균',
+		`female_age_average` FLOAT NOT NULL DEFAULT 0 COMMENT '여성_나이_평균',
+		`total_age_average` FLOAT NOT NULL DEFAULT 0 COMMENT '총계_나이_평균',
+		`remark` VARCHAR(200) NULL DEFAULT '' COMMENT '비고',
+		`ins_user_id` VARCHAR(30) NOT NULL  COMMENT '추가_사용자_ID',
+		`ins_dtm` TIMESTAMP NULL DEFAULT current_timestamp() COMMENT '추가_일시',
+		`upd_user_id` VARCHAR(30) NOT NULL  COMMENT '갱신_사용자_ID',
+		`upd_dtm` TIMESTAMP NULL DEFAULT current_timestamp() COMMENT '갱신_일시'
+	);
+	ALTER TABLE ingu.people_age average COMMENT='인구 평균 연령';
+	ALTER TABLE `people_age average` ADD PRIMARY KEY (`seq`);
