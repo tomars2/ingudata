@@ -1,0 +1,48 @@
+학교(초중고기타) 테이블
+
+	<item>
+		<SECD>03</SECD>
+		<FCLTYCD>SH00011642</FCLTYCD>
+		<FCLTYTY>01</FCLTYTY>
+		<FCLTYNM>인천작동초등학교</FCLTYNM>
+		<LNMADR>인천광역시 계양구 작전동 920</LNMADR>
+		<LATITUDE>37.5288644</LATITUDE>
+		<LONGITUDE>126.7356736</LONGITUDE>
+		<X>14108151</X>
+		<Y>4513082</Y>
+	</item>
+
+JSON 항목을 테이블로 변환하는 규칙
+	year에 작업 년도 저장
+	month에 12 저장
+	SECD:			삭제
+	FCLTYCD: SH00011642 => facility_code에 저장
+	FCLTYNM: 인천작동초등학교 => facility_name에 저장
+	LNMADR: 인천광역시 계양구 작전동 920 => facility_address에 저장
+			인천광역시 계양구로 address_code에 코드 저장
+	LATITUDE: => latitude에 저장
+	LONGITUDE: => longitude에 저장
+	X: => map_x에 저장
+	Y: => map_y에 저장
+
+테이블 생성
+	CREATE TABLE `people_facility_school` (
+	`seq` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '순번,
+		`year` INT(11) NOT NULL  COMMENT '연도',
+		`month` INT(11) NOT NULL DEFAULT '' COMMENT '월',
+		`adrs_code` VARCHAR(30) NOT NULL DEFAULT 0 COMMENT '주소_코드',
+		`facility_code` VARCHAR(30)   COMMENT '시설_코드',
+		`facility_name` VARCHAR(50)   COMMENT '시설_이름, ~명',
+		`adrs` VARCHAR(100)   COMMENT '주소',
+		`lat` FLOAT   COMMENT '위도',
+		`lon` FLOAT   COMMENT '경도',
+		`map_x` INT(11)   COMMENT '지도_x 좌표',
+		`map_y` INT(11)   COMMENT '지도_y 좌표',
+		`remark` VARCHAR(200) NULL DEFAULT '' COMMENT '비고',
+		`ins_user_id` VARCHAR(30) NOT NULL  COMMENT '추가_사용자_ID',
+		`ins_dtm` TIMESTAMP NULL DEFAULT current_timestamp() COMMENT '추가_일시',
+		`upd_user_id` VARCHAR(30) NOT NULL  COMMENT '갱신_사용자_ID',
+		`upd_dtm` TIMESTAMP NULL DEFAULT current_timestamp() COMMENT '갱신_일시'
+	);
+	ALTER TABLE ingu.people_facility_school COMMENT='시설-학교';
+	ALTER TABLE `people_facility_school` ADD PRIMARY KEY (`seq`);
